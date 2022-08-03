@@ -3,9 +3,20 @@ for (var i = 0; i <= 7; i++) {
 
     function sound() {
 
-        var htmlElement = this.innerHTML;
+        makeSound(this.innerHTML);
 
-        switch (htmlElement) {
+
+    }
+    document.addEventListener("keydown", keybord)
+
+    function keybord(event) {
+        makeSound(event.key);
+    }
+
+
+    function makeSound(key) {
+
+        switch (key) {
             case "w":
                 var crash = new Audio('sounds/crash.mp3');
                 crash.play();
@@ -38,13 +49,13 @@ for (var i = 0; i <= 7; i++) {
                 tom4.play();
                 break;
 
-            case "he":
+            case "h":
                 var fart = new Audio('sounds/fart.m4a');
                 fart.play();
                 break;
 
             default:
-                alert("aaaaa");
+                // alert("aaaaa");
                 break;
         }
     }
