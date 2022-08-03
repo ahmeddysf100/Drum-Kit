@@ -16,6 +16,10 @@ footer {
   font-family: sans-serif;
 }
 
+.he{
+  background-image: url(images/fart.jpg);
+}
+
 .w {
   background-image:url(images/crash.png);
 }
@@ -79,3 +83,5 @@ footer {
   margin: 10px;
   background-color: white;
 }
+
+

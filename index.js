@@ -34,8 +34,13 @@ for (var i = 0; i <= 6; i++) {
                 var tom4 = new Audio('sounds/tom-4.mp3');
                 tom4.play();
                 break;
+            case "he":
+                var fart = new Audio('sounds/fart.m4a');
+                fart.play();
+                break;
 
-            default:alert("aaaaa");
+            default:
+                alert("aaaaa");
                 break;
         }
     }
