@@ -52,6 +52,7 @@ for (var i = 0; i <= 7; i++) {
                 break;
 
             case "h":
+                alert("لا يهم ما سيصبح الناس عليه , بل ما سيصبحون عندما يشبون _جيه.كيه.رولينج");
                 var fart = new Audio('sounds/fart.m4a');
                 fart.play();
                 break;
@@ -74,3 +75,6 @@ function buttonAnimation(xxx) {
 
 
 }
+
+
+    
