@@ -4,7 +4,7 @@ for (var i = 0; i <= 7; i++) {
     function sound() {
 
         makeSound(this.innerHTML);
-        buttonAnimation(this.innerHTML)
+        buttonAnimation(this.innerHTML);
 
 
     }
@@ -12,7 +12,7 @@ for (var i = 0; i <= 7; i++) {
 
     function keybord(event) {
         makeSound(event.key);
-        buttonAnimation(event.kay)
+        buttonAnimation(event.key);
     }
 
 
