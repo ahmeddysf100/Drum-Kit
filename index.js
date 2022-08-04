@@ -4,6 +4,7 @@ for (var i = 0; i <= 7; i++) {
     function sound() {
 
         makeSound(this.innerHTML);
+        buttonAnimation(this.innerHTML)
 
 
     }
@@ -11,6 +12,7 @@ for (var i = 0; i <= 7; i++) {
 
     function keybord(event) {
         makeSound(event.key);
+        buttonAnimation(event.kay)
     }
 
 
@@ -59,4 +61,16 @@ for (var i = 0; i <= 7; i++) {
                 break;
         }
     }
+}
+
+function buttonAnimation(xxx) {
+    var activeButton = document.querySelector("." + xxx);
+    activeButton.classList.add("pressed");
+    setTimeout(remove, 100);
+
+    function remove() {
+        activeButton.classList.remove("pressed");
+    }
+
+
 }
