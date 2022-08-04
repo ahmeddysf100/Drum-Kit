@@ -66,7 +66,7 @@ for (var i = 0; i <= 7; i++) {
 function buttonAnimation(xxx) {
     var activeButton = document.querySelector("." + xxx);
     activeButton.classList.add("pressed");
-    setTimeout(remove, 100);
+    setTimeout(remove, 150);
 
     function remove() {
         activeButton.classList.remove("pressed");
